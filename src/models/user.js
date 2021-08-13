@@ -7,15 +7,9 @@ const userSchema = new mongoose.Schema({
     maxlength :100,
     minlength:2
   },
-  name : {
-    type : String,
-    required : true,
-    maxlength :100,
-    minlength:2
-  },
   email: {
     type:String,
-    required:false,
+    required:true,
     match:  /^.+@.+\..+$/
   }
 })
