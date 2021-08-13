@@ -7,7 +7,7 @@ const port = 8080 || 3000
 dbConnect()
 .then(() =>{
   console.log('DB connected')
-  server.listen(port, () =>{
+  server.listen(process.env.PORT || 8000, () =>{
     console.log(`server is listening in port ${port}`)
   })  
 }).catch(error =>{
