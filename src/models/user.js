@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
     required:false,
     match:  /^.+@.+\..+$/
   }
-},{strict:false})
+})
 
 
 module.exports = mongoose.model('User',userSchema)
